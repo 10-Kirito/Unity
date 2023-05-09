@@ -127,7 +127,7 @@ Unity 的**预制件**系统允许创建、配置和存储游戏对象及其所�
 
 将鼠标按钮命名为：`mouse 0、mouse 1、mouse 2`，以此类推。
 
-还可以使用 [`Input.GetKey`](https://docs.unity.cn/cn/current/ScriptReference/Input.GetKey.html) 和上文指定的命名约定来查询特定键或按钮的输入。例如：
+还可以使用 [`Input.GetKey`](https://docs.unity.cn/cn/current/ScriptReference/Input.GetKey.html) 和上文指定的命名约定来查询特定键或	按钮的输入。例如：
 
 ```
 Input.GetKey("a");
