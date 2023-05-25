@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf5fc400c9a6d9f44b14a60dc2e15d4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 5
   tankSprite:
   - {fileID: 21300000, guid: 55b011970cb6c1441be9af335e238fb6, type: 3}
   - {fileID: 21300016, guid: 55b011970cb6c1441be9af335e238fb6, type: 3}
@@ -155,7 +155,7 @@ MonoBehaviour:
   - {fileID: 21300048, guid: 55b011970cb6c1441be9af335e238fb6, type: 3}
   bulletPrefab: {fileID: 9144111766247204363, guid: ec04c020adff3f84288a0acc3daccf18, type: 3}
   explosionPrefab: {fileID: 9181385812122144760, guid: 4bc9fb834bb555c488a73fafcec6e2ce, type: 3}
-  defendEffectPrefab: {fileID: 347500460249904130, guid: 007c747ee44f2824cb57c980b8073f20, type: 3}
+  defendEffectPrefab: {fileID: 1758196433}
 --- !u!1001 &347500459850794707
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -166,6 +166,10 @@ PrefabInstance:
     - target: {fileID: 347500460249904130, guid: 007c747ee44f2824cb57c980b8073f20, type: 3}
       propertyPath: m_Name
       value: Shield
+      objectReference: {fileID: 0}
+    - target: {fileID: 347500460249904130, guid: 007c747ee44f2824cb57c980b8073f20, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 347500460249904140, guid: 007c747ee44f2824cb57c980b8073f20, type: 3}
       propertyPath: m_SortingOrder
@@ -225,6 +229,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 007c747ee44f2824cb57c980b8073f20, type: 3}
+--- !u!1 &1758196433 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 347500460249904130, guid: 007c747ee44f2824cb57c980b8073f20, type: 3}
+  m_PrefabInstance: {fileID: 347500459850794707}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1758196446 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 347500460249904141, guid: 007c747ee44f2824cb57c980b8073f20, type: 3}

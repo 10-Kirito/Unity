@@ -22,13 +22,12 @@ public class PlayerManager : MonoBehaviour
     public TMP_Text playerHealthText;
     public TMP_Text playerScoreText;
 
-    public GameObject gameOverUI;
+    public GameObject gameOverUI;   
     
 
 
     // 单例模式
     private static PlayerManager instance;
-
     public static PlayerManager Instance
     {
         get
@@ -58,6 +57,13 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // 实时检测玩家是否按下ESC按键，如果按下，游戏结束，并返回到主菜单
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            ReturnToMenu();
+        }
+
+
         // 如果玩家死亡，游戏结束
         if(isDefeated)
         {

@@ -41,7 +41,7 @@ public class Bullet : MonoBehaviour
         {
             // 这将会触发相对应的事件，并将参数tankId传递给事件的委托实例
             OnHitIronwall.Invoke(tankId);
-        }
+        }   
     }
 
 

@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf9987a53711df44826324f764d8bdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 5
   tankSprite:
   - {fileID: 21300000, guid: c3a4b3c783ddce7438622efbc82d5538, type: 3}
   - {fileID: 21300018, guid: c3a4b3c783ddce7438622efbc82d5538, type: 3}

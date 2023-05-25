@@ -46,7 +46,6 @@ public class DoublePlayerManager : MonoBehaviour
         {
             return instance;
         }
-
         set
         {
             instance = value;
@@ -69,6 +68,13 @@ public class DoublePlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // 实时检测玩家是否按下ESC按键，如果按下，游戏结束，并返回到主菜单
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            ReturnToMenu();
+        }
+
+
         // 如果玩家死亡，游戏结束
         if(isDefeated)
         {

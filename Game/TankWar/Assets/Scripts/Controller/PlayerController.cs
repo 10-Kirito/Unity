@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     // 玩家的属性：
     // 1. 玩家移动的速度
-    public float moveSpeed = 10;
+    public float moveSpeed = 5;
     // 2. 生成子弹时候的角度
     private Vector3 bullectEulerAngles;
     // 3. 生成子弹的CD
@@ -150,17 +150,6 @@ public class PlayerController : MonoBehaviour
             spriteRenderer.sprite = tankSprite[3];
             bullectEulerAngles = new Vector3(0, 0, 90);
         }
-
-        /*if(Mathf.Abs(horizantal) > 0.05f)
-        {
-            moveAudio.clip = audioClips[1];
-            
-            if(!moveAudio.isPlaying)
-            {
-                moveAudio.Play();
-            }
-        }*/
-
         if (horizantal != 0)
         {
             return;

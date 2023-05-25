@@ -6,7 +6,7 @@ public class PlayerController2 : MonoBehaviour
 {
     // 玩家的属性：
     // 1. 玩家移动的速度
-    public float moveSpeed = 10;
+    public float moveSpeed = 5;
     // 2. 生成子弹时候的角度
     private Vector3 bullectEulerAngles;
     // 3. 生成子弹的CD
@@ -110,9 +110,6 @@ public class PlayerController2 : MonoBehaviour
 
             Move();
         }
-
-
-
     }
 
 
